@@ -1,4 +1,26 @@
-# 2021 Internship Menu Exercise
+# Work / Project Examples
+
+-
+- Travel Website (School Project)
+- Past Work Projects
+
+# Inspiration
+
+- Portfolio Website: <br/>
+- Admitedly
+-
+
+# Focus
+
+-
+
+# Code Challenge
+
+## 2021 Internship Menu Exercise
+
+# Demonstration of the website
+
+## Specifications:
 
 Tackle the following steps to create a menu for a "Fancy Italian Restaurant".
 
