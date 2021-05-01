@@ -7,10 +7,10 @@ var filteredMenu = [];
 
 const renderMenuItem = (menuItem, item) => {
   item.innerHTML = `
-    <h4 class=${menuItem.spicy ? "spicy" : ""}>
-    ${menuItem.menuOrder} \t ${menuItem.name}
-    </h4> 
-    <p>$${menuItem.price.toFixed(2)}</p>
+    <h3 class=${menuItem.spicy ? "spicy" : ""}>
+    ${menuItem.menuOrder}. ${menuItem.name}
+    </h3> 
+    <h4>$${menuItem.price.toFixed(2)}</h4>
     <p>${menuItem.description}</p>
     `;
 };
@@ -39,12 +39,15 @@ const renderAll = () => {
   for (var i = 0; i < filteredMenu.length; i++) {
     const menuType = filteredMenu[i];
     var menuSection = document.getElementById(types[i]);
+    var menuSectionItems = document.createElement("div");
+    menuSectionItems.className = "sectionItems";
     menuType.forEach((menuItem) => {
       var item = document.createElement("div");
       item.className = menuItem.spicy ? "spicyItem item" : "item";
       renderMenuItem(menuItem, item);
-      menuSection.appendChild(item);
+      menuSectionItems.appendChild(item);
     });
+    menuSection.appendChild(menuSectionItems);
   }
 };
 

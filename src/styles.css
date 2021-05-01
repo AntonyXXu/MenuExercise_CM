@@ -2,6 +2,59 @@ body {
   font-family: sans-serif;
 }
 
+.container {
+  margin: 1vw 15vw;
+  text-align: center;
+  background-color: beige;
+}
+.header {
+  margin: 10px;
+  padding: 10px;
+  background: linear-gradient(
+    to right,
+    green 33%,
+    white 33%,
+    white 66%,
+    red 33%
+  );
+}
+.menuItems {
+  padding: 20px 3vw;
+}
+section {
+  margin: 10px 0 30px;
+}
+section h2 {
+  text-decoration: underline;
+}
+.sectionItems {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-column-gap: 3%;
+  grid-auto-flow: row;
+  grid-row-gap: 40px;
+  margin-bottom: 50px;
+}
+.item {
+  padding: 10px;
+  text-align: center;
+  align-self: center;
+  height: 100%;
+  border-radius: 30px;
+  border: forestgreen solid 1px;
+}
+
+.item:hover {
+  background-color: lightskyblue;
+}
+.item h4 {
+  margin-top: 10px;
+}
+.item p {
+  text-align: left;
+  padding: 0 5px;
+}
+
 .spicy::after {
   width: 16px;
   height: 16px;
