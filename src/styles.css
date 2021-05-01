@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
 }
 
-.spicy:before {
+.spicy::after {
   width: 16px;
   height: 16px;
   content: "";
