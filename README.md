@@ -1,6 +1,6 @@
 # Demonstration of the website
 
-![MenuDemo](https://github.com/AntonyXXu/MenuExercise_CM/blob/main/assets/MenuDemo.gif)
+![MenuDemoGif](https://github.com/AntonyXXu/MenuExercise_CM/blob/main/assets/MenuDemo.gif)
 
 # Work / Project Examples
 
