@@ -5,19 +5,29 @@ body {
 .container {
   margin: 1vw 15vw;
   text-align: center;
-  background-color: beige;
+  background-image: url("../assets/background.png");
+  background-repeat: repeat;
+  background-size: 100%;
 }
+
 .header {
-  padding: 10px;
+  /* Background image from https://www.vecteezy.com/photo/2055392-top-view-of-fresh-italian-ingredients-on-light-wood*/
+  background-image: url("../assets/header_background.jpg");
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   margin-bottom: 1vw;
-  background: linear-gradient(
-    to right,
-    green 33%,
-    white 33%,
-    white 66%,
-    red 33%
-  );
+  height: 12vw;
+  display: flex;
+  justify-content: center;
 }
+
+.header h1 {
+  align-self: flex-end;
+  font-size: 2.5rem;
+}
+
 .menuItems {
   padding: 20px 3vw;
 }
@@ -33,7 +43,7 @@ section::before {
   display: block;
   width: 100%;
   height: 2px;
-  background: #94d887;
+  background: #000000;
   align-self: center;
 }
 .sectionItems {
@@ -50,19 +60,25 @@ section::before {
   align-self: center;
   height: 100%;
   border-radius: 30px;
-  border: forestgreen solid 1px;
-  background-color: rgb(234, 248, 230);
+  border: forestgreen solid 2px;
+  background-color: rgb(234, 248, 230, 0.5);
 }
 
 .item:hover {
-  background-color: lightskyblue;
+  background: linear-gradient(
+    to right,
+    rgba(0, 128, 0, 0.5) 10%,
+    rgba(255, 255, 255, 0.5) 10%,
+    rgba(255, 255, 255, 0.5) 90%,
+    rgba(255, 0, 0, 0.5) 10%
+  );
 }
 .item h3 {
   margin-top: 5px;
 }
 .item p {
   text-align: left;
-  padding: 0 5px;
+  padding: 0 20px;
   font-style: italic;
 }
 .spicy {
