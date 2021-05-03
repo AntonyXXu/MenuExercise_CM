@@ -21,7 +21,7 @@ const sortMenu = (filteredMenu) => {
   types.forEach((type) => {
     var menuList = menuItems
       .filter((menuItem) => {
-        return menuItem.type == type;
+        return menuItem.type === type;
       })
       .sort((a, b) => {
         return a.menuOrder - b.menuOrder;
@@ -35,7 +35,7 @@ const sortMenu = (filteredMenu) => {
 // similar to React, where I would render the data based on a menu item
 // 'component'.
 const renderAll = () => {
-  document.getElementById("spicyCheck").checked;
+  document.getElementById("spicyCheck").checked = true;
   for (var i = 0; i < filteredMenu.length; i++) {
     const menuType = filteredMenu[i];
     var menuSection = document.getElementById(types[i]);
