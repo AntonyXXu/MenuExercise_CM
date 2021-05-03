@@ -39,8 +39,13 @@ const renderAll = () => {
   for (var i = 0; i < filteredMenu.length; i++) {
     const menuType = filteredMenu[i];
     var menuSection = document.getElementById(types[i]);
+
+    // Create a container for the menu section
     var menuSectionItems = document.createElement("div");
     menuSectionItems.className = "sectionItems";
+
+    // For each item, create an item using renderMenuItem and append the result
+    // within the menu section
     menuType.forEach((menuItem) => {
       var item = document.createElement("div");
       item.className = menuItem.spicy ? "spicyItem item" : "item";
