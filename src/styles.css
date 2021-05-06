@@ -14,11 +14,12 @@ body {
   /* Background image from https://www.vecteezy.com/photo/2055392-top-view-of-fresh-italian-ingredients-on-light-wood*/
   background-image: url("../assets/header_background.jpg");
   background-position-y: bottom;
+  background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   margin-bottom: 1vw;
-  height: 12vw;
+  height: 250px;
   display: flex;
   justify-content: center;
 }
@@ -78,7 +79,7 @@ section::before {
 }
 .item p {
   text-align: left;
-  padding: 0 20px;
+  padding: 0 1vw;
   font-style: italic;
 }
 .spicy {
