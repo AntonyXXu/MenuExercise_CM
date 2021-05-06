@@ -8,7 +8,7 @@ var filteredMenu = [];
 const renderMenuItem = (menuItem, item) => {
   item.innerHTML = `
     <h3 class=${menuItem.spicy ? "spicy" : ""}>
-    ${menuItem.menuOrder}. ${menuItem.name}
+    ${menuItem.menuOrder + 1}. ${menuItem.name}
     </h3> 
     <h4>$${menuItem.price.toFixed(2)}</h4>
     <p>${menuItem.description}</p>
@@ -36,6 +36,7 @@ const sortMenu = (filteredMenu) => {
 // 'component'.
 const renderAll = () => {
   document.getElementById("spicyCheck").checked = true;
+  3;
   for (var i = 0; i < filteredMenu.length; i++) {
     const menuType = filteredMenu[i];
     var menuSection = document.getElementById(types[i]);
